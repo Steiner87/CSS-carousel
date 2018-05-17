@@ -10,33 +10,29 @@
 </head>
 
 <body>
-    <section>
-        <div class="slider">
-            <input type="radio" id="btn-1" name="toggle" checked>
-            <input type="radio" id="btn-2" name="toggle">
-            <input type="radio" id="btn-3" name="toggle">
-            <div class="slider-controls">
-                <label for="btn-1"></label>
-                <label for="btn-2"></label>
-                <label for="btn-3"></label>
-            </div>
-            <div class="slider-arrows1">
-                <label for="btn-1"></label>
-                <label for="btn-2"></label>
-                <label for="btn-3"></label>
-            </div>
-            <div class="slider-arrows2">
-                <label for="btn-1"></label>
-                <label for="btn-2"></label>
-                <label for="btn-3"></label>
-            </div>
-            <div class="slider-inner">
-                <div class="slider-slides">
-                    <img src="http://via.placeholder.com/450x350" alt="">
-                    <img src="http://via.placeholder.com/450x350" alt="">
-                    <img src="http://via.placeholder.com/450x350" alt="">
-                </div>
-            </div>
+    <section class="container">
+        <input type="radio" name="image" id="i1" checked>
+        <input type="radio" name="image" id="i2">
+        <input type="radio" name="image" id="i3">
+        <div class="slide-img" id="one">
+            <img src="http://via.placeholder.com/450x350" alt="">
+            <label for="i3" class="prev"></label>
+            <label for="i2" class="next"></label>
+        </div>
+        <div class="slide-img" id="two">
+            <img src="http://via.placeholder.com/450x350" alt="">
+            <label for="i1" class="prev"></label>
+            <label for="i3" class="next"></label>
+        </div>
+        <div class="slide-img" id="three">
+            <img src="http://via.placeholder.com/450x350" alt="">
+            <label for="i2" class="prev"></label>
+            <label for="i1" class="next"></label>
+        </div>
+        <div class="nav">
+            <label class="dots" id="dot1" for="i1"></label>
+            <label class="dots" id="dot2" for="i2"></label>
+            <label class="dots" id="dot3" for="i3"></label>
         </div>
     </section>
 </body>
